@@ -7,6 +7,7 @@ public class coleccionable : MonoBehaviour
     [SerializeField] float x;
     [SerializeField] float y;
     [SerializeField] float z;
+    [SerializeField] float velocidad;
 
 
     float timer;
@@ -22,7 +23,7 @@ public class coleccionable : MonoBehaviour
         transform.Rotate(new Vector3(40, 40, 40) * Time.deltaTime);
         timer += Time.deltaTime;
 
-        transform.Translate(new Vector3(x, y, z).normalized * 1 * Time.deltaTime,Space.World);
+        transform.Translate(new Vector3(x, y, z).normalized * velocidad * Time.deltaTime,Space.World);
         if (timer >= 5)
         {
             y = y * -1f;

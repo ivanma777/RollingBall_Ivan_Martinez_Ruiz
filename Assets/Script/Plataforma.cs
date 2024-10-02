@@ -7,6 +7,7 @@ public class Plataforma : MonoBehaviour
     [SerializeField] float x;
     [SerializeField] float y;
     [SerializeField] float z;
+    [SerializeField] float velocidad;
     float timer;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class Plataforma : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        transform.Translate(new Vector3(x, y, z).normalized * 1 * Time.deltaTime);
+        transform.Translate(new Vector3(x, y, z).normalized * velocidad * Time.deltaTime);
         if (timer >= 5)
         {
             x = x * -1f;
