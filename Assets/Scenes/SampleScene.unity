@@ -122,6 +122,210 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &19972233
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -54.982357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
+--- !u!1001 &80958917
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -51.732357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
+--- !u!1001 &119110928
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -45.982357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +463,74 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1001 &389958462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.732357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +649,74 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1001 &668024228
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.732357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
 --- !u!1 &680997735
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 1
+  velocidad1: 0
 --- !u!54 &1022335214
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -678,128 +1019,482 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1204430413
-GameObject:
+--- !u!1001 &1027834455
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1204430418}
-  - component: {fileID: 1204430417}
-  - component: {fileID: 1204430416}
-  - component: {fileID: 1204430415}
-  - component: {fileID: 1204430414}
-  m_Layer: 0
-  m_Name: cuboMario
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1204430414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204430413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f254f9c3e20cb34e9bca50ca4bfe6f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 0
-  y: 1
-  z: 0
-  velocidad: 1
---- !u!65 &1204430415
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204430413}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1204430416
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204430413}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1204430417
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204430413}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1204430418
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204430413}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.13, y: 2.94, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.732357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
+--- !u!1001 &1112799595
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.732357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
+--- !u!1001 &1526940980
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.732357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
+--- !u!1001 &1546707541
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.732357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
+--- !u!1001 &1619438645
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.732357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
+--- !u!1001 &1690236945
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.482357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
+--- !u!1001 &1715140239
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.732357
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
 --- !u!1 &2073628531
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,13 +1593,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073628531}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0035, y: 0.3354, z: 39.0752}
+  m_LocalRotation: {x: 0.035292763, y: -0, z: -0, w: 0.9993771}
+  m_LocalPosition: {x: 0.88187444, y: -2.385326, z: 38.96744}
   m_LocalScale: {x: 2.532151, y: 0.32917, z: 77.1503}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 4.045, y: 0, z: 0}
 --- !u!1 &2098107331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1750,74 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &7695182330897352827
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3622929781326471434, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_Name
+      value: cuboMario
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516626191092224984, guid: 9202d1893f2be4945b4b20dea1ac203a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9202d1893f2be4945b4b20dea1ac203a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1065,5 +1828,17 @@ SceneRoots:
   - {fileID: 680997739}
   - {fileID: 2073628535}
   - {fileID: 2098107336}
-  - {fileID: 1204430418}
+  - {fileID: 7695182330897352827}
   - {fileID: 1022335212}
+  - {fileID: 1619438645}
+  - {fileID: 1027834455}
+  - {fileID: 1715140239}
+  - {fileID: 668024228}
+  - {fileID: 1112799595}
+  - {fileID: 1546707541}
+  - {fileID: 1526940980}
+  - {fileID: 389958462}
+  - {fileID: 80958917}
+  - {fileID: 19972233}
+  - {fileID: 119110928}
+  - {fileID: 1690236945}
