@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    
+    Rigidbody rb;
     [SerializeField] float velocidad;
     [SerializeField] float velocidad1;
+    [SerializeField] Vector3 direccion;
+    [SerializeField] float fuerza;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,36 +18,17 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        rb = GetComponent<Rigidbody>();
+        if (Input.GetKey(KeyCode.Space ))
         {
-
-            transform.Translate(new Vector3(0, 0, 1).normalized * velocidad * Time.deltaTime, Space.World);
-
-        } 
-        if(Input.GetKey(KeyCode.S))
-        {
-
-            transform.Translate(new Vector3(0, 0, -1).normalized * velocidad * Time.deltaTime, Space.World);
-
-        } 
-        if(Input.GetKey(KeyCode.A))
-        {
-
-            transform.Translate(new Vector3(1, 0, 0).normalized * velocidad * Time.deltaTime, Space.World);
-
-        } 
-        if(Input.GetKey(KeyCode.D))
-        {
-
-            transform.Translate(new Vector3(-1, 0, 0).normalized * velocidad * Time.deltaTime, Space.World);
-
+            rb.AddForce(direccion * fuerza, ForceMode.Impulse);
         }
-        if(Input.GetKey(KeyCode.Space))
-        {
+        
 
-            transform.Translate(new Vector3(0, 2, 0)* velocidad1 * Time.deltaTime, Space.World);
+        rb.AddForce(new Vector3(h, 0, v).normalized  * velocidad1,ForceMode.Force);
 
-        }
-
+        
     }
 }
