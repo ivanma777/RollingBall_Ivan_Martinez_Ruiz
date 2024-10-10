@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -14,7 +15,8 @@ public class Player : MonoBehaviour
     private float vida = 3;
     Vector3 posInicial;
     [SerializeField] TMP_Text tiempoText;
-    int tiempo;
+    float tiempo;
+    bool haSalido;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,14 @@ public class Player : MonoBehaviour
         
 
         rb.AddForce(new Vector3(h, 0, v).normalized  * velocidad1,ForceMode.Force);
+        
+        if (haSalido == true)
+        {
+            tiempo += 1 * Time.deltaTime;
+            
+            tiempoText.SetText("Timer: " + tiempo);
 
+        }
         
     }
     private void OnTriggerEnter(Collider other)
@@ -57,14 +66,18 @@ public class Player : MonoBehaviour
             transform.position = (posInicial);
 
         }
+        
+        
+    }
+    private void OnTriggerExit(Collider other)
+    {
         if (other.CompareTag("Salida"))
         {
-            tiempo++;
-            tiempoText.SetText("Timer: " + tiempo);
+            haSalido = true;
 
         }
     }
-   
 
+    
 
 }
