@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -9,10 +10,15 @@ public class Player : MonoBehaviour
     [SerializeField] float velocidad1;
     [SerializeField] Vector3 direccion;
     [SerializeField] float fuerza;
+    private float puntos = 0;
+    private float vida = 3;
+    Vector3 posInicial;
+    [SerializeField] TMP_Text tiempoText;
+    int tiempo;
     // Start is called before the first frame update
     void Start()
     {
-        
+        posInicial = transform.position;
     }
 
     // Update is called once per frame
@@ -31,4 +37,34 @@ public class Player : MonoBehaviour
 
         
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Trampa"))
+        {
+            vida -= 1;
+            Destroy(other.gameObject);
+
+        }
+
+        if (other.CompareTag("Coleccionable"))
+        {
+            puntos += 10;
+            Destroy(other.gameObject);
+
+        }
+        if (other.CompareTag("Muerte"))
+        {
+            transform.position = (posInicial);
+
+        }
+        if (other.CompareTag("Salida"))
+        {
+            tiempo++;
+            tiempoText.SetText("Timer: " + tiempo);
+
+        }
+    }
+   
+
+
 }
