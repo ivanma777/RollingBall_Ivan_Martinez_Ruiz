@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
     float tiempo;
     bool haSalido;
 
+
+
+
+
     [SerializeField] float MaxDistance;
     // Start is called before the first frame update
     void Start()
@@ -30,20 +34,16 @@ public class Player : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         rb = GetComponent<Rigidbody>();
-        DetectaSuelo();
 
         if (Input.GetKey(KeyCode.Space ))
         {
-            if (haSalido == true)
+            
+            if (DetectaSuelo() )
             {
                 rb.AddForce(direccion * fuerza, ForceMode.Impulse);
 
             }
-            else
-            {
-
-                Debug.Log("No estas en suelo");
-            }
+            
            
         }
         
@@ -90,11 +90,13 @@ public class Player : MonoBehaviour
 
         }
     }
-    private void DetectaSuelo()
+    private bool DetectaSuelo()
     {
 
-        Physics.Raycast(transform.position, direccion,  MaxDistance);
-
+        
+        bool resultado =Physics.Raycast(transform.position, Vector3.down,  MaxDistance);
+        Debug.DrawLine(transform.position, Vector3.down,Color.red, 1f);
+        return resultado;   
     }
     
 

@@ -15,13 +15,13 @@ public class CambiaCamera : MonoBehaviour
             if(camara1.activeSelf)
             {
 
-                camara2.SetActive(false);
                 camara2.SetActive(true);
+                camara1.SetActive(false);
             }
             else
             {
-                camara2.SetActive(true);
                 camara2.SetActive(false);
+                camara1.SetActive(true);
 
             }
 
