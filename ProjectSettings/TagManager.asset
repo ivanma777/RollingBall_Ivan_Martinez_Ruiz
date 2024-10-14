@@ -9,6 +9,7 @@ TagManager:
   - Suelo
   - Muerte
   - Salida
+  - Camera
   layers:
   - Default
   - TransparentFX

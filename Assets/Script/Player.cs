@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -17,6 +16,8 @@ public class Player : MonoBehaviour
     [SerializeField] TMP_Text tiempoText;
     float tiempo;
     bool haSalido;
+
+    [SerializeField] float MaxDistance;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +30,21 @@ public class Player : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         rb = GetComponent<Rigidbody>();
+        DetectaSuelo();
+
         if (Input.GetKey(KeyCode.Space ))
         {
-            rb.AddForce(direccion * fuerza, ForceMode.Impulse);
+            if (haSalido == true)
+            {
+                rb.AddForce(direccion * fuerza, ForceMode.Impulse);
+
+            }
+            else
+            {
+
+                Debug.Log("No estas en suelo");
+            }
+           
         }
         
 
@@ -77,7 +90,16 @@ public class Player : MonoBehaviour
 
         }
     }
+    private void DetectaSuelo()
+    {
 
+        Physics.Raycast(transform.position, direccion,  MaxDistance);
+
+    }
+    
+
+
+    
     
 
 }
