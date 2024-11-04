@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject car;
 
+    [Header("Cameras")]
+
+    [SerializeField] private GameObject camaraPlayer;
+    [SerializeField] private GameObject camaraVehicule;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,18 +64,23 @@ public class GameManager : MonoBehaviour
         }  
     }
     public void GetOutCar()
-           {
-
+    {
+        camaraPlayer.SetActive(true);
+        camaraVehicule.SetActive(false);
             FakePlayer.SetActive(false);
             Player.SetActive(true);
 
             Salida.PuedoSalir1 = false;
+
+        
             
              Player.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.left);
 
-           }
+    }
     public void GetIn()
            {
+        camaraPlayer.SetActive(false);
+        camaraVehicule.SetActive(true );
                 Player.SetActive(false);
 
              FakePlayer.SetActive(true);

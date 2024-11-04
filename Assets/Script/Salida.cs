@@ -12,6 +12,8 @@ public class Salida : MonoBehaviour
 
     [SerializeField] GameManager gameManager;
 
+    
+
     public bool PuedoSalir1 { get => PuedoSalir; set => PuedoSalir = value; }
 
     // Start is called before the first frame update
