@@ -12,6 +12,8 @@ public class PlayerInOut : MonoBehaviour
 
     [SerializeField] ControlVehiculo cVehiculo;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +58,8 @@ public class PlayerInOut : MonoBehaviour
         if (PuedoEntrar)
         {
             gameManager.GetIn();
+
+
 
             cVehiculo.enabled = true;
 

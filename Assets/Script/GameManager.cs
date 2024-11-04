@@ -17,9 +17,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] PlayerInOut Entrada;
 
-    [SerializeField] Trineo Salida;
+    [SerializeField] Salida Salida;
 
     [SerializeField] GameObject Player;
+    
+    [SerializeField] GameObject FakePlayer;
+
+
 
     [SerializeField] ControlVehiculo cVehiculo;
 
@@ -39,7 +43,7 @@ public class GameManager : MonoBehaviour
             Entrada.EntrarVehiculo();
 
             Salida.SalirVehiculo();
-
+            
 
         }
 
@@ -57,13 +61,20 @@ public class GameManager : MonoBehaviour
     public void GetOutCar()
            {
 
+            FakePlayer.SetActive(false);
+            Player.SetActive(true);
 
+            Salida.PuedoSalir1 = false;
+            
              Player.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.left);
 
            }
     public void GetIn()
            {
+                Player.SetActive(false);
 
-             Player.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.up);
+             FakePlayer.SetActive(true);
+
+             //Player.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.up);
            }
 }

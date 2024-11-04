@@ -2,45 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trineo : MonoBehaviour
+public class Salida : MonoBehaviour
 {
-    bool PuedoSalir;
+    private bool PuedoSalir;
 
     [SerializeField] ControlVehiculo cVehiculo;
 
     [SerializeField] GameObject FakePlayer;
 
     [SerializeField] GameManager gameManager;
+
+    public bool PuedoSalir1 { get => PuedoSalir; set => PuedoSalir = value; }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
 
 
-        if (other.CompareTag("SalidaT"))
+        if (other.CompareTag("FakePlayer"))
         {
             PuedoSalir = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("SalidaT"))
-        {
-            PuedoSalir = false;
-
-        }
-    }
+    
 
     public void SalirVehiculo()
     {
@@ -51,8 +47,4 @@ public class Trineo : MonoBehaviour
         }
 
     }
-    
-    
-
 }
-

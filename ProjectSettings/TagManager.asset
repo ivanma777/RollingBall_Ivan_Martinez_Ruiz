@@ -12,6 +12,8 @@ TagManager:
   - Camera
   - Trineo
   - Entrada
+  - SalidaT
+  - FakePlayer
   layers:
   - Default
   - TransparentFX
