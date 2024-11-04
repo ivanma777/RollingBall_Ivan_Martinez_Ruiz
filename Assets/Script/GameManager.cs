@@ -61,8 +61,8 @@ public class GameManager : MonoBehaviour
 
            }
     public void GetIn()
-             {
+           {
 
              Player.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.up);
-             }
+           }
 }
