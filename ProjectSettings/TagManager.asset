@@ -10,6 +10,8 @@ TagManager:
   - Muerte
   - Salida
   - Camera
+  - Trineo
+  - Entrada
   layers:
   - Default
   - TransparentFX

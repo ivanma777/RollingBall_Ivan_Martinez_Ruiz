@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
         }
         
 
-        rb.AddForce(new Vector3(h, 0, v).normalized  * velocidad1,ForceMode.Force);
+        
         
         if (haSalido == true)
         {
@@ -58,6 +58,18 @@ public class Player : MonoBehaviour
 
         }
         
+    }
+
+    private void FixedUpdate()
+    {
+        Movimiento();
+    }
+
+    public void Movimiento()
+    {
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        rb.AddForce(new Vector3(h, 0, v).normalized * velocidad1, ForceMode.Force);
     }
     private void OnTriggerEnter(Collider other)
     {
