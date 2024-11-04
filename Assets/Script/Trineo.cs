@@ -6,6 +6,8 @@ public class Trineo : MonoBehaviour
 {
     bool PuedoSalir;
 
+    [SerializeField] ControlVehiculo cVehiculo;
+
     [SerializeField] GameManager gameManager;
     // Start is called before the first frame update
     void Start()
@@ -43,10 +45,11 @@ public class Trineo : MonoBehaviour
         if (PuedoSalir)
         {
             gameManager.GetOutCar();
-
+            cVehiculo.enabled = false;
         }
 
     }
+    
     
 
 }

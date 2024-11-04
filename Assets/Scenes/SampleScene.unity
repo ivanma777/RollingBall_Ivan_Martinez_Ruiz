@@ -8390,7 +8390,6 @@ GameObject:
   - component: {fileID: 1003233790}
   - component: {fileID: 1004364606}
   - component: {fileID: 1000330078}
-  - component: {fileID: 1006632437}
   m_Layer: 0
   m_Name: Lowpoly_Christmas_Pack_018:pCube3
   m_TagString: Trineo
@@ -8398,19 +8397,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1006632437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006632436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54e03bb85ca89c43bedd236737964a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 1871346586}
 --- !u!1 &1006632438
 GameObject:
   m_ObjectHideFlags: 0
@@ -8484,6 +8470,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1006133726}
+  - component: {fileID: 1006632448}
+  - component: {fileID: 1006632447}
   m_Layer: 0
   m_Name: 018 Buggy
   m_TagString: Trineo
@@ -8491,6 +8479,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1006632447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006632446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54e03bb85ca89c43bedd236737964a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1871346586}
+--- !u!65 &1006632448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006632446}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4369816, y: 1.7488673, z: 2.78364}
+  m_Center: {x: -0.05417055, y: 0.37443388, z: 0.89181995}
 --- !u!1 &1015362418
 GameObject:
   m_ObjectHideFlags: 0
@@ -11568,7 +11590,7 @@ MonoBehaviour:
   tiempoText: {fileID: 477571109}
   EnterCodeKey: 101
   Entrada: {fileID: 208659020}
-  Salida: {fileID: 0}
+  Salida: {fileID: 1006632447}
   Player: {fileID: 1022335208}
   car: {fileID: 1006632446}
 --- !u!4 &1871346587

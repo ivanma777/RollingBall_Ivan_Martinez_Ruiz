@@ -21,13 +21,14 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject Player;
 
+    [SerializeField] ControlVehiculo cVehiculo;
 
     [SerializeField] GameObject car;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        cVehiculo.enabled = false;
     }
 
     // Update is called once per frame

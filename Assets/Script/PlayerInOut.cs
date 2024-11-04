@@ -10,6 +10,8 @@ public class PlayerInOut : MonoBehaviour
 
     [SerializeField] GameManager gameManager;
 
+    [SerializeField] ControlVehiculo cVehiculo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +57,7 @@ public class PlayerInOut : MonoBehaviour
         {
             gameManager.GetIn();
 
-
+            cVehiculo.enabled = true;
 
         }
 
