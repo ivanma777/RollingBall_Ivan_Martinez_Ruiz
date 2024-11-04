@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class Trineo : MonoBehaviour
 {
-    bool PuedoSalir;
+    
 
-    [SerializeField] ControlVehiculo cVehiculo;
-
-    [SerializeField] GameObject FakePlayer;
-
-    [SerializeField] GameManager gameManager;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,34 +19,11 @@ public class Trineo : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
+    
 
+   
 
-        if (other.CompareTag("SalidaT"))
-        {
-            PuedoSalir = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("SalidaT"))
-        {
-            PuedoSalir = false;
-
-        }
-    }
-
-    public void SalirVehiculo()
-    {
-        if (PuedoSalir)
-        {
-            gameManager.GetOutCar();
-            cVehiculo.enabled = false;
-        }
-
-    }
+    
     
     
 

@@ -78,13 +78,13 @@ public class GameManager : MonoBehaviour
 
     }
     public void GetIn()
-           {
-        camaraPlayer.SetActive(false);
-        camaraVehicule.SetActive(true );
+    {
+                 camaraPlayer.SetActive(false);
+                 camaraVehicule.SetActive(true );
                 Player.SetActive(false);
 
              FakePlayer.SetActive(true);
 
              //Player.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.up);
-           }
+    }
 }
