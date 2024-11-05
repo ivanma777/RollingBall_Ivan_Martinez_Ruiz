@@ -4,51 +4,114 @@ using UnityEngine;
 
 public class ControlVehiculo : MonoBehaviour
 {
-    private CharacterController controller;
-    [SerializeField] private float velocidadMovimiento;
 
-    private float velocidadRotacion;
+  
+
+
+
+    [SerializeField] float velocidadMaxima = 10f; // Velocidad máxima que puede alcanzar el objeto
+    [SerializeField] float aceleracion = 2f; // Aceleración del objeto
+    [SerializeField] float desaceleracion = 3f; // Desaceleración cuando se deja de mover
     [SerializeField] private float smoothTime;
 
-    Rigidbody rb;
-    //private Animator anim;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //controller = GetComponent<CharacterController>();
-        //anim = GetComponent<Animator>();
+    private float rotacionYActual = 0f;
 
+    private Vector3 velocidadActual = Vector3.zero; // Velocidad actual del objeto
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
+        // Obtenemos el input de movimiento (WASD o flechas)
+        float inputHorizontal = Input.GetAxis("Horizontal");
+        float inputVertical = Input.GetAxis("Vertical");
 
-        transform.Translate(new Vector3(h, 0, v).normalized * velocidadMovimiento * Time.deltaTime);
-        //Vector2 input = new Vector2(h, v);
-        //if (input.magnitude > 0)
-        //{
-        //    //anim.SetBool("Walking", true);
-        //    //float angulo = Mathf.Atan2(input.x, input.y) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
+        // Creamos un vector de dirección en base al input
+        Vector3 direccionMovimiento = new Vector3(inputHorizontal, 0, inputVertical).normalized;
 
+        // Si hay input, aceleramos
+        if (direccionMovimiento.magnitude > 0)
+        {
+            // Incrementamos la velocidad en la dirección deseada
+            velocidadActual += direccionMovimiento * aceleracion * Time.deltaTime;
 
+            // Limitamos la velocidad a la velocidad máxima
+            if (velocidadActual.magnitude > velocidadMaxima)
+            {
+                velocidadActual = velocidadActual.normalized * velocidadMaxima;
+            }
+        }
+        else
+        {
+            // Si no hay input, aplicamos desaceleración
+            velocidadActual = Vector3.Lerp(velocidadActual, Vector3.zero, desaceleracion * Time.deltaTime);
+        }
 
-        //    //float anguloSuave = Mathf.SmoothDampAngle(transform.eulerAngles.y, angulo, ref velocidadRotacion, smoothTime);
+        // Movemos el objeto usando la velocidad actual
+        transform.Translate(velocidadActual * Time.deltaTime);
 
-        //    //transform.eulerAngles = new Vector3(0, anguloSuave, 0);
+        float inputRotacion = Input.GetAxis("Horizontal"); // Usa el mismo input para rotación
+        rotacionYActual += inputRotacion * smoothTime * Time.deltaTime;
 
-        //    //Vector3 movimiento = Quaternion.Euler(0, angulo, 0) * Vector3.forward;
+        // Limitamos el ángulo de rotación a 45 grados
+        rotacionYActual = Mathf.Clamp(rotacionYActual, -45f, 45f);
 
-        //    //controller.Move(movimiento * velocidadMovimiento * Time.deltaTime);
-        //}
-        //else
-        //{
-        //    //anim.SetBool("Walking", false);
-        //}
-
+        // Aplicamos la rotación limitada
+        transform.rotation = Quaternion.Euler(0, rotacionYActual, 0);
     }
+
+
+    //private CharacterController controller;
+
+    //private float velocidadRotacion;
+
+    //[SerializeField] private float velocidadMovimiento;
+    //[SerializeField] private float velocidadMax;
+    //[SerializeField] private float velocidadMin;
+
+
+    ////Rigidbody rb;
+    ////private Animator anim;
+    //// Start is called before the first frame update
+    //void Start()
+    //{
+    //    controller = GetComponent<CharacterController>();
+    //    //anim = GetComponent<Animator>();
+
+
+    //}
+
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    float h = Input.GetAxisRaw("Horizontal");
+    //    float v = Input.GetAxisRaw("Vertical");
+
+
+
+    //    transform.Translate(new Vector3(h, 0, v).normalized * velocidadMovimiento * Time.deltaTime);
+
+
+    //    //transform.eulerAngles = new Vector3(h, 0, v) * Time.deltaTime;
+    //    //Vector2 input = new Vector2(h, v);
+    //    //if (input.magnitude > 0)
+    //    //{
+    //    //    //anim.SetBool("Walking", true);
+    //    //    float angulo = Mathf.Atan2(input.x, input.y) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
+
+
+
+    //    //    float anguloSuave = Mathf.SmoothDampAngle(transform.eulerAngles.y, angulo, ref velocidadRotacion, smoothTime);
+
+    //    //    transform.eulerAngles = new Vector3(0, anguloSuave, 0);
+
+    //    //    Vector3 movimiento = Quaternion.Euler(0, angulo, 0) * Vector3.forward;
+
+    //    //    //controller.Move(movimiento * velocidadMovimiento * Time.deltaTime);
+    //    //}
+    //    //else
+    //    //{
+    //    //    //anim.SetBool("Walking", false);
+    //    //}
+
+    //}
         
 }
