@@ -25,7 +25,8 @@ public class ControlVehiculo : MonoBehaviour
         float inputVertical = Input.GetAxis("Vertical");
 
         // Creamos un vector de dirección en base al input
-        Vector3 direccionMovimiento = new Vector3(inputHorizontal, 0, inputVertical).normalized;
+        Vector3 direccionMovimiento = new Vector3(0, 0, inputVertical).normalized;
+
 
         // Si hay input, aceleramos
         if (direccionMovimiento.magnitude > 0)
@@ -39,13 +40,14 @@ public class ControlVehiculo : MonoBehaviour
                 velocidadActual = velocidadActual.normalized * velocidadMaxima;
             }
         }
-        else
-        {
-            // Si no hay input, aplicamos desaceleración
-            velocidadActual = Vector3.Lerp(velocidadActual, Vector3.zero, desaceleracion * Time.deltaTime);
-        }
+        //else
+        //{
+        //    // Si no hay input, aplicamos desaceleración
+        //    velocidadActual = Vector3.Lerp(velocidadActual, Vector3.zero, desaceleracion * Time.deltaTime);
+        //}
 
         // Movemos el objeto usando la velocidad actual
+        velocidadActual = AdjustVelocityToSlope( velocidadActual );
         transform.Translate(velocidadActual * Time.deltaTime);
 
         float inputRotacion = Input.GetAxis("Horizontal"); // Usa el mismo input para rotación
@@ -58,7 +60,26 @@ public class ControlVehiculo : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, rotacionYActual, 0);
     }
 
+    private Vector3 AdjustVelocityToSlope(Vector3 velocity)
 
+    { 
+        var ray = new Ray(transform.position, Vector3.down);
+        
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, 0.2f ))
+        {
+            var slopeRotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
+            var adjustVelocity = slopeRotation * velocity;
+
+            if (adjustVelocity.y < 0)
+            {
+                return adjustVelocity;
+
+            }
+
+        }
+            return velocity;
+    
+    }
     //private CharacterController controller;
 
     //private float velocidadRotacion;
