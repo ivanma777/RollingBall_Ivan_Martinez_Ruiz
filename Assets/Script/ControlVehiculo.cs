@@ -18,6 +18,9 @@ public class ControlVehiculo : MonoBehaviour
 
     private Vector3 velocidadActual = Vector3.zero; // Velocidad actual del objeto
 
+    public float SmoothTime { get => smoothTime; set => smoothTime = value; }
+    public float RotacionYActual { get => rotacionYActual; set => rotacionYActual = value; }
+
     void Update()
     {
         // Obtenemos el input de movimiento (WASD o flechas)
@@ -51,13 +54,13 @@ public class ControlVehiculo : MonoBehaviour
         transform.Translate(velocidadActual * Time.deltaTime);
 
         float inputRotacion = Input.GetAxis("Horizontal"); // Usa el mismo input para rotación
-        rotacionYActual += inputRotacion * smoothTime * Time.deltaTime;
+        RotacionYActual += inputRotacion * SmoothTime * Time.deltaTime;
 
         // Limitamos el ángulo de rotación a 45 grados
-        rotacionYActual = Mathf.Clamp(rotacionYActual, -45f, 45f);
+        RotacionYActual = Mathf.Clamp(RotacionYActual, -45f, 45f);
 
         // Aplicamos la rotación limitada
-        transform.rotation = Quaternion.Euler(0, rotacionYActual, 0);
+        transform.rotation = Quaternion.Euler(0, RotacionYActual, 0);
     }
 
     private Vector3 AdjustVelocityToSlope(Vector3 velocity)
