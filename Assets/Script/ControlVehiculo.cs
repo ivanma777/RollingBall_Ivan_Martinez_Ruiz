@@ -66,7 +66,7 @@ public class ControlVehiculo : MonoBehaviour
 
         float inputRotacion = Input.GetAxis("Horizontal"); // Usa el mismo input para rotación
 
-        if (Mathf.Abs(inputRotacion) > 0.01f)
+        if (Mathf.Abs(inputRotacion) > 0f)
         {
             RotacionYActual += inputRotacion * SmoothTime * Time.deltaTime;
 
@@ -76,11 +76,11 @@ public class ControlVehiculo : MonoBehaviour
             // Aplicamos la rotación limitada
             transform.rotation = Quaternion.Euler(0, RotacionYActual, 0) ;
         }
-        else 
-        
+        else
+
         {
             RotacionYActual = 0f;
-            
+
             transform.rotation = Quaternion.Slerp(transform.rotation, rotacionInicial, smoothTimeR * Time.deltaTime);
 
 
