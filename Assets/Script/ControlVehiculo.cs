@@ -13,6 +13,9 @@ public class ControlVehiculo : MonoBehaviour
     [SerializeField] float aceleracion = 2f; // Aceleración del objeto
     [SerializeField] float desaceleracion = 3f; // Desaceleración cuando se deja de mover
     [SerializeField] private float smoothTime;
+    [SerializeField] private float smoothTimeR;
+
+
 
     private float rotacionYActual = 0f;
 
@@ -25,7 +28,7 @@ public class ControlVehiculo : MonoBehaviour
 
     private void Start()
     {
-        rotacionInicial = transform.localRotation;
+        rotacionInicial = transform.rotation;
     }
 
     void Update()
@@ -63,7 +66,7 @@ public class ControlVehiculo : MonoBehaviour
 
         float inputRotacion = Input.GetAxis("Horizontal"); // Usa el mismo input para rotación
 
-        if (inputRotacion != 0)
+        if (Mathf.Abs(inputRotacion) > 0.01f)
         {
             RotacionYActual += inputRotacion * SmoothTime * Time.deltaTime;
 
@@ -76,9 +79,11 @@ public class ControlVehiculo : MonoBehaviour
         else 
         
         {
-
+            RotacionYActual = 0f;
             
-            transform.rotation = rotacionInicial.normalized;
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotacionInicial, smoothTimeR * Time.deltaTime);
+
+
 
         }
     }
