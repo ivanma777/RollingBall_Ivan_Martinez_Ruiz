@@ -23,6 +23,7 @@ public class ControlVehiculo : MonoBehaviour
 
     public float SmoothTime { get => smoothTime; set => smoothTime = value; }
     public float RotacionYActual { get => rotacionYActual; set => rotacionYActual = value; }
+    public float Aceleracion { get => aceleracion; set => aceleracion = value; }
 
     private Quaternion rotacionInicial;
 
@@ -45,7 +46,7 @@ public class ControlVehiculo : MonoBehaviour
         if (direccionMovimiento.magnitude > 0)
         {
             // Incrementamos la velocidad en la dirección deseada
-            velocidadActual += direccionMovimiento * aceleracion * Time.deltaTime;
+            velocidadActual += direccionMovimiento * Aceleracion * Time.deltaTime;
 
             // Limitamos la velocidad a la velocidad máxima
             if (velocidadActual.magnitude > velocidadMaxima)
@@ -66,26 +67,26 @@ public class ControlVehiculo : MonoBehaviour
 
         float inputRotacion = Input.GetAxis("Horizontal"); // Usa el mismo input para rotación
 
-        if (Mathf.Abs(inputRotacion) > 0f)
-        {
+        //if (Mathf.Abs(inputRotacion) > 0f)
+        //{
             RotacionYActual += inputRotacion * SmoothTime * Time.deltaTime;
 
             // Limitamos el ángulo de rotación a 45 grados
-            RotacionYActual = Mathf.Clamp(RotacionYActual, -45f, 45f);
+            //RotacionYActual = Mathf.Clamp(RotacionYActual, -45f, 45f);
 
             // Aplicamos la rotación limitada
             transform.rotation = Quaternion.Euler(0, RotacionYActual, 0) ;
-        }
-        else
+        //}
+        //else
 
-        {
-            RotacionYActual = 0f;
+        //{
+        //    RotacionYActual = 0f;
 
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotacionInicial, smoothTimeR * Time.deltaTime);
+        //    transform.rotation = Quaternion.Slerp(transform.rotation, rotacionInicial, smoothTimeR * Time.deltaTime);
 
 
 
-        }
+        //}
     }
 
     private Vector3 AdjustVelocityToSlope(Vector3 velocity)
