@@ -15,7 +15,7 @@ public class ControlVehiculo : MonoBehaviour
     [SerializeField] private float smoothTime;
     [SerializeField] private float smoothTimeR;
 
-    private float frenado;
+    private float frenado ;
 
 
     private float rotacionYActual = 0f;
@@ -42,7 +42,7 @@ public class ControlVehiculo : MonoBehaviour
         float inputVertical = Input.GetAxis("Vertical");
 
         // Creamos un vector de dirección en base al input
-        Vector3 direccionMovimiento = new Vector3(0, 0, inputVertical).normalized;
+        Vector3 direccionMovimiento = new Vector3(inputHorizontal, 0, inputVertical).normalized;
 
 
         // Si hay input, aceleramos
@@ -72,26 +72,20 @@ public class ControlVehiculo : MonoBehaviour
         
             RotacionYActual += inputRotacion * SmoothTime * Time.deltaTime;
 
-        frenado = RotacionYActual;
             // Aplicamos la rotación limitada
             transform.rotation = Quaternion.Euler(0, RotacionYActual, 0) ;
 
             // Si no hay input, aplicamos desaceleración
-            velocidadActual = Vector3.Lerp(velocidadActual, Vector3.zero, desaceleracion * Time.deltaTime);
 
 
-        //if (Mathf.Abs(inputRotacion) > 0f)
-        //{
+        if (Mathf.Abs(inputRotacion) > 0f)
+        {
             // Limitamos el ángulo de rotación a 45 grados
-            //RotacionYActual = Mathf.Clamp(RotacionYActual, -45f, 45f);
-        //}
-        //else
-
-        //{
-        //    RotacionYActual = 0f;
-
-        //    transform.rotation = Quaternion.Slerp(transform.rotation, rotacionInicial, smoothTimeR * Time.deltaTime);
-        //}
+            //frenado = RotacionYActual;
+            velocidadActual = Vector3.Lerp(velocidadActual, Vector3.zero,  desaceleracion  * Time.deltaTime);
+            
+        }
+        
     }
 
     private Vector3 AdjustVelocityToSlope(Vector3 velocity)
