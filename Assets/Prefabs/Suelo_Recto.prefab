@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3720841029630234682}
   m_Layer: 0
   m_Name: Suelo_Recto
-  m_TagString: Untagged
+  m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6036493258207633105}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 13.885167, z: -154.01567}
-  m_LocalScale: {x: 17.658, y: 0.32917002, z: 77.15031}
+  m_LocalRotation: {x: 0.01637543, y: -0, z: -0, w: 0.99986595}
+  m_LocalPosition: {x: -0.3, y: 12.622055, z: -154.04175}
+  m_LocalScale: {x: 20.10977, y: 0.32917002, z: 77.15031}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.877, y: 0, z: 0}
 --- !u!33 &6341915631260039277
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c6d8bb448d225a747bee2447e3e6ff66, type: 2}
+  - {fileID: 2100000, guid: 7a032a77cf1c7634dadf98af9e129d37, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
