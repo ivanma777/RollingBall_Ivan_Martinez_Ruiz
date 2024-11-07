@@ -15,6 +15,7 @@ public class ControlVehiculo : MonoBehaviour
     [SerializeField] private float smoothTime;
     [SerializeField] private float smoothTimeR;
 
+    private float frenado;
 
 
     private float rotacionYActual = 0f;
@@ -45,37 +46,38 @@ public class ControlVehiculo : MonoBehaviour
 
 
         // Si hay input, aceleramos
-        if (direccionMovimiento.magnitude > 0)
-        {
+        //if (direccionMovimiento.magnitude > 0)
+        //{
             // Incrementamos la velocidad en la dirección deseada
-            velocidadActual += direccionMovimiento * Aceleracion * Time.fixedDeltaTime;
+            velocidadActual += direccionMovimiento * Aceleracion * Time.fixedDeltaTime ;
 
             // Limitamos la velocidad a la velocidad máxima
             if (velocidadActual.magnitude > velocidadMaxima)
             {
                 velocidadActual = velocidadActual.normalized * velocidadMaxima;
             }
-        }
-        else
-        {
-            // Si no hay input, aplicamos desaceleración
-            velocidadActual = Vector3.Lerp(velocidadActual, Vector3.zero, desaceleracion * Time.deltaTime);
-        }
+        //}
+        //else
+        //{
+        //}
 
         // Movemos el objeto usando la velocidad actual
         velocidadActual = AdjustVelocityToSlope( velocidadActual );
+
         //transform.Translate(velocidadActual * Time.deltaTime);
         rb.MovePosition(rb.position + velocidadActual * Time.fixedDeltaTime);
 
 
         float inputRotacion = Input.GetAxis("Horizontal"); // Usa el mismo input para rotación
-
+        
             RotacionYActual += inputRotacion * SmoothTime * Time.deltaTime;
 
-
+        frenado = RotacionYActual;
             // Aplicamos la rotación limitada
             transform.rotation = Quaternion.Euler(0, RotacionYActual, 0) ;
 
+            // Si no hay input, aplicamos desaceleración
+            velocidadActual = Vector3.Lerp(velocidadActual, Vector3.zero, desaceleracion * Time.deltaTime);
 
 
         //if (Mathf.Abs(inputRotacion) > 0f)
