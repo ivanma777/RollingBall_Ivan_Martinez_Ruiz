@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Trineo : MonoBehaviour
 {
-    
+    SceneSystem sceneSystem;
 
     
     // Start is called before the first frame update
@@ -24,14 +24,21 @@ public class Trineo : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Final"))
+        {
+            sceneSystem.Final();
+        
+        }
+    }
 
-    
 
-   
 
-    
-    
-    
+
+
+
+
 
 }
 

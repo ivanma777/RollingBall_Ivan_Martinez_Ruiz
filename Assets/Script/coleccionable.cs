@@ -10,11 +10,13 @@ public class coleccionable : MonoBehaviour
     [SerializeField] float velocidad;
 
 
+    private bool coleccionables;
+
     float timer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        coleccionables = false;
     }
 
     // Update is called once per frame
@@ -29,6 +31,18 @@ public class coleccionable : MonoBehaviour
             y = y * -1f;
 
             timer = 0;
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            coleccionables = true;
+            Destroy(gameObject);
+            
+
         }
     }
 }

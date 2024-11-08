@@ -34,6 +34,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject camaraPlayer;
     [SerializeField] private GameObject camaraVehicule;
 
+
+    [SerializeField] private GameObject AudioVen;
+    [SerializeField] private GameObject AudioCar;
+    
+    
+
     
 
 
@@ -75,7 +81,10 @@ public class GameManager : MonoBehaviour
         camaraVehicule.SetActive(false);
             FakePlayer.SetActive(false);
             Player.SetActive(true);
-        
+
+        AudioVen.SetActive(true);
+        AudioCar.SetActive(false);
+
         Salida.PuedoSalir1 = false;
 
         
