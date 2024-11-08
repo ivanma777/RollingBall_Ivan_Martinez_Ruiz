@@ -17,6 +17,12 @@ public class Player : MonoBehaviour
     float tiempo;
     bool haSalido;
 
+    [Header("Musica")]
+    
+    [SerializeField] private AudioClip Win;
+    [SerializeField] private AudioClip lose;
+
+
 
 
 

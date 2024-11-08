@@ -34,6 +34,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject camaraPlayer;
     [SerializeField] private GameObject camaraVehicule;
 
+    
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +50,8 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(EnterCodeKey))
         {
             Entrada.EntrarVehiculo();
+
+
 
             Salida.SalirVehiculo();
             
@@ -69,8 +75,8 @@ public class GameManager : MonoBehaviour
         camaraVehicule.SetActive(false);
             FakePlayer.SetActive(false);
             Player.SetActive(true);
-
-            Salida.PuedoSalir1 = false;
+        
+        Salida.PuedoSalir1 = false;
 
         
             
@@ -79,6 +85,7 @@ public class GameManager : MonoBehaviour
     }
     public void GetIn()
     {
+       
                  camaraPlayer.SetActive(false);
                  camaraVehicule.SetActive(true );
                 Player.SetActive(false);

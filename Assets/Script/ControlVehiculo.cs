@@ -33,6 +33,11 @@ public class ControlVehiculo : MonoBehaviour
     public float Aceleracion { get => aceleracion; set => aceleracion = value; }
 
     private Rigidbody rb;
+
+    [Header("Musica")]
+    [SerializeField] private AudioClip deslizar;
+    [SerializeField] private AudioClip choque;
+    private AudioManager audioManager;
     //private Quaternion rotacionInicial;
 
     private void Start()
@@ -47,6 +52,8 @@ public class ControlVehiculo : MonoBehaviour
         float inputHorizontal = Input.GetAxis("Horizontal");
         float inputVertical = 1;
 
+
+        
         // Creamos un vector de dirección en base al input
         Vector3 direccionMovimiento = new Vector3(inputHorizontal, 0, inputVertical).normalized;
 
@@ -54,6 +61,7 @@ public class ControlVehiculo : MonoBehaviour
         // Si hay input, aceleramos
         if (direccionMovimiento.magnitude > 0)
         {
+            //audioManager.ReproducirSonido(deslizar);
             // Incrementamos la velocidad en la dirección deseada
             velocidadActual += direccionMovimiento * Aceleracion * Time.fixedDeltaTime ;
 
@@ -68,6 +76,11 @@ public class ControlVehiculo : MonoBehaviour
             velocidadActual = Vector3.Lerp(velocidadActual, Vector3.zero, desaceleracion * Time.fixedDeltaTime);
         }
 
+        //if (Input.GetKey(KeyCode.W))
+        //{
+        //    audioManager.ReproducirSonido(deslizar);
+
+        //}
         // Si el jugador está girando, aplicamos frenado y derrape
         if (inputHorizontal != 0)
         {

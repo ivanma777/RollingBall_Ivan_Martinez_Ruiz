@@ -45,6 +45,13 @@ public class SceneSystem : MonoBehaviour
 
     }
 
+    public void Menu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
+    }
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.U))
