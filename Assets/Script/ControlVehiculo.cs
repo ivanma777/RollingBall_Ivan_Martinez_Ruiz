@@ -72,11 +72,13 @@ public class ControlVehiculo : MonoBehaviour
         if (inputHorizontal != 0)
         {
             velocidadActual *= frenado;
-            velocidadActual = Vector3.Lerp(velocidadActual, new Vector3(velocidadActual.x * derrape, velocidadActual.y, velocidadActual.z), Time.fixedDeltaTime);
+            //velocidadActual = Vector3.Lerp(velocidadActual, new Vector3(velocidadActual.x * derrape, velocidadActual.y, velocidadActual.z), Time.fixedDeltaTime);
+            //Mathf.Clamp(rotacionYActual, 45, -45);
         }
 
         // Limitar el ángulo de rotación a [-45, 45]
-        rotacionYActual = Mathf.Clamp(rotacionYActual + inputHorizontal * smoothTimeR * Time.deltaTime, -anguloDerrape, anguloDerrape);
+
+        //rotacionYActual = Mathf.Clamp(rotacionYActual + inputHorizontal * smoothTimeR * Time.deltaTime, -anguloDerrape, anguloDerrape);
         // Movemos el objeto usando la velocidad actual
         velocidadActual = AdjustVelocityToSlope( velocidadActual );
 
@@ -86,10 +88,11 @@ public class ControlVehiculo : MonoBehaviour
 
         float inputRotacion = Input.GetAxis("Horizontal"); // Usa el mismo input para rotación
         
-            RotacionYActual += inputRotacion * SmoothTime ;
+            rotacionYActual += inputRotacion * SmoothTime ;
+
 
         // Aplicamos la rotación limitada
-        transform.rotation = Quaternion.Euler(0, RotacionYActual, 0) ;
+        transform.rotation = Quaternion.Euler(0, rotacionYActual, 0) ;
         
 
         // Si no hay input, aplicamos desaceleración

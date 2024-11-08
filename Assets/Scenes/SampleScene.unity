@@ -6356,8 +6356,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.54138577, y: 0.000000056956523, z: -0.000000036675058, w: 0.84077436}
-  m_LocalPosition: {x: 0, y: 12.07, z: -5}
+  m_LocalRotation: {x: 0.229753, y: -6.356193e-10, z: 1.5004942e-10, w: 0.973249}
+  m_LocalPosition: {x: 0, y: 6.07, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10210,13 +10210,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadMaxima: 5
-  aceleracion: 0.5
+  aceleracion: 0.25
   desaceleracion: 0.00001
-  smoothTime: 100
-  smoothTimeR: 20
-  frenado: 0.95
-  derrape: 0
-  AnguloDerrape: 0
+  smoothTime: 0.3
+  smoothTimeR: 10
+  anguloDerrape: 45
+  frenado: 0.99995
+  derrape: 0.5
 --- !u!54 &1006632450
 Rigidbody:
   m_ObjectHideFlags: 0
