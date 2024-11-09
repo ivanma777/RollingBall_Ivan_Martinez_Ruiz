@@ -6,7 +6,7 @@ using UnityEngine;
 public class coleccionable : MonoBehaviour
 {
 
-     [SerializeField]GameManagerF gameManagerF;
+     [SerializeField]AlmacenDatos datos;
 
     
 
@@ -24,7 +24,7 @@ public class coleccionable : MonoBehaviour
     {
         coleccionables = false;
         
-        gameManagerF.Ncoleccionable1++;
+        datos.Ncoleccionable++;
     }
 
     // Update is called once per frame
