@@ -6,7 +6,8 @@ using UnityEngine;
 public class coleccionable : MonoBehaviour
 {
 
-    [SerializeField] SceneSystem sceneSystem;
+     GameManagerF gameManagerF;
+
     
 
     [SerializeField] float x;
@@ -22,6 +23,8 @@ public class coleccionable : MonoBehaviour
     void Start()
     {
         coleccionables = false;
+        
+        gameManagerF.Ncoleccionable1++;
     }
 
     // Update is called once per frame
@@ -44,7 +47,7 @@ public class coleccionable : MonoBehaviour
     {
         if(other.CompareTag("Trineo"))
         {
-            sceneSystem.Regalos++;
+            gameManagerF.Regalos++;
             
             coleccionables = true;
             Destroy(gameObject);

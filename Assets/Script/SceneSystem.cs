@@ -8,16 +8,14 @@ using UnityEngine.UI;
 public class SceneSystem : MonoBehaviour
 {
 
-    [SerializeField] TMP_Text RegalosRecogidos;
-
-    private int regalos;
+    
 
 
     bool pause;
 
     [SerializeField] GameObject MenuPause;
 
-    public int Regalos { get => regalos; set => regalos = value; }
+    
 
     // Start is called before the first frame update
     public void Play()
@@ -87,7 +85,7 @@ public class SceneSystem : MonoBehaviour
     {
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        RegalosRecogidos.SetText("Regalos totales recogidos: " + Regalos);
+        //RegalosRecogidos.SetText("Regalos totales recogidos: " + Regalos);
     }
 
 
