@@ -6,7 +6,7 @@ using UnityEngine;
 public class coleccionable : MonoBehaviour
 {
 
-     GameManagerF gameManagerF;
+     [SerializeField]GameManagerF gameManagerF;
 
     
 
@@ -31,15 +31,15 @@ public class coleccionable : MonoBehaviour
     void Update()
     {
         transform.Rotate(new Vector3(40, 40, 40) * Time.deltaTime);
-        timer += Time.deltaTime;
+        //timer += Time.deltaTime;
 
-        transform.Translate(new Vector3(x, y, z).normalized * velocidad * Time.deltaTime,Space.World);
-        if (timer >= 5)
-        {
-            y = y * -1f;
+        //transform.Translate(new Vector3(x, y, z).normalized * velocidad * Time.deltaTime,Space.World);
+        //if (timer >= 5)
+        //{
+        //    y = y * -1f;
 
-            timer = 0;
-        }
+        //    timer = 0;
+        //}
 
     }
 
@@ -47,10 +47,10 @@ public class coleccionable : MonoBehaviour
     {
         if(other.CompareTag("Trineo"))
         {
-            gameManagerF.Regalos++;
-            
+
+           
             coleccionables = true;
-            Destroy(gameObject);
+            Destroy(this.gameObject);
             
 
         }

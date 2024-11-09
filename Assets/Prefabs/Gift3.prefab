@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4220047365910133002}
   m_Layer: 0
   m_Name: Gift3
-  m_TagString: Untagged
+  m_TagString: Coleccionable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f254f9c3e20cb34e9bca50ca4bfe6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManagerF: {fileID: 0}
   x: 0
   y: 0
   z: 0

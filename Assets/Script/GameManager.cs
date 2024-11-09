@@ -66,15 +66,15 @@ public class GameManager : MonoBehaviour
 
 
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag( "Salida"))
-        {
-            tiempo++;
-            tiempoText.SetText("Timer: " + tiempo);
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag( "Salida"))
+    //    {
+    //        tiempo++;
+    //        tiempoText.SetText("Timer: " + tiempo);
 
-        }  
-    }
+    //    }  
+    //}
     public void GetOutCar()
     {
         camaraPlayer.SetActive(true);

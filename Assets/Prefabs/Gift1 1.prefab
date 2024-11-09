@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -2157502705456342063}
   m_Layer: 0
   m_Name: Gift1 1
-  m_TagString: Untagged
+  m_TagString: Coleccionable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6094702407219378152}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -5.9859085, y: 0.17010021, z: 3.0453079}
-  m_LocalScale: {x: 551.84, y: 551.84, z: 551.84}
+  m_LocalScale: {x: 551.84, y: 551.83997, z: 551.83997}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &2098631738585930254
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f254f9c3e20cb34e9bca50ca4bfe6f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManagerF: {fileID: 0}
   x: 0
   y: 0
   z: 0
@@ -144,5 +145,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0024634178, y: 0.0021416314, z: 0.0027769716}
-  m_Center: {x: 0.00003517635, y: 2.9103828e-10, z: 0.001388829}
+  m_Size: {x: 0.0040030344, y: 0.0026552037, z: 0.0039377343}
+  m_Center: {x: 0.000008133856, y: 0.00025678656, z: 0.0011345283}

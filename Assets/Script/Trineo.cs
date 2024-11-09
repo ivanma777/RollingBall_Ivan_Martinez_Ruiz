@@ -10,19 +10,33 @@ public class Trineo : MonoBehaviour
     float tiempo;
     bool haSalido;
 
+    [SerializeField] TMP_Text intentosText;
+    private int intentos;
+    [SerializeField] TMP_Text regalosText;
+    private int regalos;    
+
+    
+
+    
+
+
+
     [Header("Conexiones")]
 
-    SceneSystem sceneSystem;
+    [SerializeField]SceneSystem sceneSystem;
 
-    GameManagerF gameManagerF;
+    
 
     private Vector3 posInicial;
 
-    
+    public int Regalos { get => regalos; set => regalos = value; }
+    public int Intentos { get => intentos; set => intentos = value; }
+
+
     // Start is called before the first frame update
     void Start()
     {
-        gameManagerF.Regalos = 0;
+        
 
         posInicial = transform.position;
         //if (Mathf.Abs(inputRotacion) > 0f)
@@ -56,13 +70,17 @@ public class Trineo : MonoBehaviour
 
         if (other.CompareTag("Coleccionable"))
         {
-            gameManagerF.Regalos += 1;
-            Destroy(other.gameObject);
+            Regalos++;
+            regalosText.SetText(": " + Regalos);
+            
 
         }
         if (other.CompareTag("Muerte"))
         {
             transform.position = (posInicial);
+            Intentos++;
+            tiempo = 0;
+            intentosText.SetText(": " + Intentos);
             //intentos--;
 
         }
@@ -75,8 +93,10 @@ public class Trineo : MonoBehaviour
             haSalido = true;
 
         }
-    }
 
+        
+    }
+    
 
 
 

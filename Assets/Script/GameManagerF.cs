@@ -7,19 +7,22 @@ public class GameManagerF : MonoBehaviour
 {
     [SerializeField] TMP_Text RegalosRecogidos;
 
-    private int regalos;
+    [SerializeField] Trineo trineo;
 
     private int Ncoleccionable;
 
-    
+   
 
-    public int Regalos { get => regalos; set => regalos = value; }
+    
     public int Ncoleccionable1 { get => Ncoleccionable; set => Ncoleccionable = value; }
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        RegalosRecogidos.SetText("Regalos totales recogidos: " + Regalos + " / " + Ncoleccionable1);
+        RegalosRecogidos.SetText("Regalos totales recogidos: " + trineo.Regalos + " / " + Ncoleccionable1);
+
+        RegalosRecogidos.SetText("Nº intentos: " + trineo.Intentos );
     }
 
     // Update is called once per frame
@@ -27,4 +30,6 @@ public class GameManagerF : MonoBehaviour
     {
         
     }
+
+    
 }
