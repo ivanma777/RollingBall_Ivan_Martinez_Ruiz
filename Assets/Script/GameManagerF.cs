@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerF : MonoBehaviour
 {
-    [SerializeField] TMP_Text RegalosRecogidos;
+    
 
-    [SerializeField] Trineo trineo;
+    [SerializeField] TMP_Text RegalosRecogidos;
+    [SerializeField] TMP_Text intentosRealizados;
+
+     
 
     private int Ncoleccionable;
 
-   
+    private int regalos ;
 
+    private int intentos;
+    
     
     public int Ncoleccionable1 { get => Ncoleccionable; set => Ncoleccionable = value; }
     
@@ -20,9 +26,11 @@ public class GameManagerF : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RegalosRecogidos.SetText("Regalos totales recogidos: " + trineo.Regalos + " / " + Ncoleccionable1);
+        
+        RegalosRecogidos.SetText("Regalos totales recogidos: " + regalos  + " / " + Ncoleccionable1);
 
-        RegalosRecogidos.SetText("Nº intentos: " + trineo.Intentos );
+        intentosRealizados.SetText("N intentos: " + intentos );
+        
     }
 
     // Update is called once per frame
@@ -31,5 +39,33 @@ public class GameManagerF : MonoBehaviour
         
     }
 
-    
+
+
+    public void OnDestroy()
+    {
+
+        SaveData();
+    }
+    private void Awake()
+    {
+        LoadData();
+    }
+
+
+    void SaveData()
+    {
+        AlmacenDatos.instance.Ncoleccionable = Ncoleccionable;
+        AlmacenDatos.instance.regalos = regalos;
+        AlmacenDatos.instance.intentos = intentos;
+
+
+    }
+
+    void LoadData()
+    {
+        regalos = AlmacenDatos.instance.regalos;
+        Ncoleccionable = AlmacenDatos.instance.Ncoleccionable;
+        intentos = AlmacenDatos.instance.intentos;
+    }
+
 }

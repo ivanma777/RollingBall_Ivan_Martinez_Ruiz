@@ -11,11 +11,11 @@ public class Trineo : MonoBehaviour
     bool haSalido;
 
     [SerializeField] TMP_Text intentosText;
-    private int intentos;
-    [SerializeField] TMP_Text regalosText;
-    private int regalos;    
-
     
+    [SerializeField] TMP_Text regalosText;
+    
+
+    [SerializeField] AlmacenDatos almacenDatos;
 
     
 
@@ -29,8 +29,8 @@ public class Trineo : MonoBehaviour
 
     private Vector3 posInicial;
 
-    public int Regalos { get => regalos; set => regalos = value; }
-    public int Intentos { get => intentos; set => intentos = value; }
+    
+    
 
 
     // Start is called before the first frame update
@@ -70,17 +70,17 @@ public class Trineo : MonoBehaviour
 
         if (other.CompareTag("Coleccionable"))
         {
-            Regalos++;
-            regalosText.SetText(": " + Regalos);
+            almacenDatos.regalos++;
+            regalosText.SetText(": " + almacenDatos.regalos);
             
 
         }
         if (other.CompareTag("Muerte"))
         {
             transform.position = (posInicial);
-            Intentos++;
+            almacenDatos.intentos++;
             tiempo = 0;
-            intentosText.SetText(": " + Intentos);
+            intentosText.SetText(": " + almacenDatos.intentos);
             //intentos--;
 
         }
