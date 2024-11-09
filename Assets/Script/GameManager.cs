@@ -99,7 +99,10 @@ public class GameManager : MonoBehaviour
                  camaraVehicule.SetActive(true );
                 Player.SetActive(false);
 
-             FakePlayer.SetActive(true);
+        AudioVen.SetActive(false);
+        AudioCar.SetActive(true);
+
+        FakePlayer.SetActive(true);
 
              //Player.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.up);
     }

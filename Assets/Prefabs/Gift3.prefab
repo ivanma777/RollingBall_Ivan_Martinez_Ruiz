@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7398524480137592948}
   - component: {fileID: 1363271074796761175}
   - component: {fileID: 5893284378380090630}
+  - component: {fileID: 4220047365910133002}
   m_Layer: 0
   m_Name: Gift3
   m_TagString: Untagged
@@ -103,7 +104,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -124,3 +125,24 @@ MonoBehaviour:
   y: 0
   z: 0
   velocidad: 0
+--- !u!65 &4220047365910133002
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5880703655712768263}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0034459666, y: 0.0034459657, z: 0.003066452}
+  m_Center: {x: -5.820767e-11, y: 3.492459e-10, z: 0.0015201109}

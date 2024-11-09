@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class coleccionable : MonoBehaviour
 {
+
+    [SerializeField] SceneSystem sceneSystem;
+    
+
     [SerializeField] float x;
     [SerializeField] float y;
     [SerializeField] float z;
@@ -37,8 +42,10 @@ public class coleccionable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Trineo"))
         {
+            sceneSystem.Regalos++;
+            
             coleccionables = true;
             Destroy(gameObject);
             
