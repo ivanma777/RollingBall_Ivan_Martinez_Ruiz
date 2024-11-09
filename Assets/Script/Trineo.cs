@@ -1,9 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Trineo : MonoBehaviour
 {
+    [Header("Tiempo")]
+    [SerializeField] TMP_Text tiempoText;
+    float tiempo;
+    bool haSalido;
+
+    [Header("Conexiones")]
+
     SceneSystem sceneSystem;
 
     GameManagerF gameManagerF;
@@ -29,7 +37,14 @@ public class Trineo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (haSalido == true)
+        {
+            tiempo +=  Time.deltaTime;
+
+
+            tiempoText.SetText( tiempo.ToString("F2"));
+
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -52,6 +67,16 @@ public class Trineo : MonoBehaviour
 
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Salida"))
+        {
+            haSalido = true;
+
+        }
+    }
+
 
 
 

@@ -13,9 +13,7 @@ public class Player : MonoBehaviour
     private float puntos = 0;
     private float vida = 3;
     Vector3 posInicial;
-    [SerializeField] TMP_Text tiempoText;
-    float tiempo;
-    bool haSalido;
+    
 
     [Header("Musica")]
     
@@ -56,13 +54,7 @@ public class Player : MonoBehaviour
 
         
         
-        if (haSalido == true)
-        {
-            tiempo += 1 * Time.deltaTime;
-            
-            tiempoText.SetText("Timer: " + tiempo);
-
-        }
+        
         
     }
 
@@ -100,14 +92,7 @@ public class Player : MonoBehaviour
         
         
     }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Salida"))
-        {
-            haSalido = true;
-
-        }
-    }
+    
     private bool DetectaSuelo()
     {
 
