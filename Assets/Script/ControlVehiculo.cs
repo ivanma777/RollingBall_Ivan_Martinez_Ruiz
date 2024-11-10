@@ -7,7 +7,7 @@ public class ControlVehiculo : MonoBehaviour
 
     [SerializeField] Rigidbody rb;
 
-    public float forwardAccel = 8f, reverseAccel = 4f, macSpeed = 50f, turnStrength = 180f, gravityForce= 2f;
+    public float forwardAccel = 8f, reverseAccel = 4f, macSpeed = 50f, turnStrength = 180f, gravityForce= 2f, dragOnGround = 3f;
 
     private float speedInput, turnInput;
 
@@ -67,10 +67,13 @@ public class ControlVehiculo : MonoBehaviour
         {
             grounded = true;    
 
+            transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
         }
 
         if( grounded )
         {
+
+            rb.drag = dragOnGround;
              if(Mathf.Abs(speedInput) > 0)
              {
                 rb.AddForce(transform.forward *  speedInput);
@@ -82,6 +85,7 @@ public class ControlVehiculo : MonoBehaviour
         }
         else
         {
+            rb.drag = 0.1f;
             rb.AddForce(Vector3.up * -gravityForce );
 
 

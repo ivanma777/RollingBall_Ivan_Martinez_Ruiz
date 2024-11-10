@@ -8241,16 +8241,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 477571107}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1563353153}
+  m_Father: {fileID: 675454550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960.06, y: -122}
+  m_AnchoredPosition: {x: 156.01154, y: -41.308968}
   m_SizeDelta: {x: 312.023, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &477571109
@@ -9272,13 +9272,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 477571108}
   m_Father: {fileID: 1563353153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.149, y: 431}
-  m_SizeDelta: {x: 346.201, y: 100}
+  m_AnchoredPosition: {x: 0.060068, y: 483}
+  m_SizeDelta: {x: 346.201, y: 66.313}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &675454551
 MonoBehaviour:
@@ -9293,7 +9294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.57254905}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.23137255}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11878,11 +11879,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 102234137}
-  forwardAccel: 8
-  reverseAccel: 4
+  forwardAccel: 20
+  reverseAccel: 1
   macSpeed: 50
   turnStrength: 135
   gravityForce: 10
+  dragOnGround: 1
   Ground:
     serializedVersion: 2
     m_Bits: 64
@@ -16509,7 +16511,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 675454550}
-  - {fileID: 477571108}
   - {fileID: 985169427}
   - {fileID: 1816032331}
   m_Father: {fileID: 0}
