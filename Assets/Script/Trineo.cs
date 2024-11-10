@@ -8,7 +8,7 @@ public class Trineo : MonoBehaviour
     [Header("Tiempo")]
     [SerializeField] TMP_Text tiempoText;
     float tiempo;
-    bool haSalido;
+    public bool haSalido;
 
     [SerializeField] TMP_Text intentosText;
     

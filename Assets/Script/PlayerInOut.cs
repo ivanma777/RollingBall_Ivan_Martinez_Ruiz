@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerInOut : MonoBehaviour
@@ -12,12 +13,12 @@ public class PlayerInOut : MonoBehaviour
 
     [SerializeField] ControlVehiculo cVehiculo;
 
-    
+    [SerializeField] GameObject Boton;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Boton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,6 +39,7 @@ public class PlayerInOut : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PuedoEntrar = true;
+            Boton.SetActive(true);
         }
     }
 
@@ -46,8 +48,10 @@ public class PlayerInOut : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PuedoEntrar= false;
+            
 
         }
+       
     }
 
     
@@ -62,7 +66,7 @@ public class PlayerInOut : MonoBehaviour
 
 
             cVehiculo.enabled = true;
-
+            Boton.SetActive(false);
         }
 
     }

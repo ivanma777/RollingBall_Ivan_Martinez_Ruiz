@@ -23,9 +23,13 @@ public class ControlVehiculo : MonoBehaviour
 
     [SerializeField] float maxEmission = 25f, emissionRate;
 
+    [SerializeField] Trineo trineo;
+
     private void Start()
     {
         rb.transform.parent = null;
+
+       
     }
 
     private void Update()
@@ -57,7 +61,7 @@ public class ControlVehiculo : MonoBehaviour
 
         }
 
-
+        
 
 
     }
@@ -84,7 +88,10 @@ public class ControlVehiculo : MonoBehaviour
              {
                 rb.AddForce(transform.forward *  speedInput);
 
-                emissionRate = maxEmission;
+               
+                    emissionRate = maxEmission;
+                
+               
 
 
              }
@@ -104,6 +111,8 @@ public class ControlVehiculo : MonoBehaviour
         {
             var emissionModule = part.emission;
             emissionModule.rateOverTime = emissionRate;
+
+            
         }
 
     }

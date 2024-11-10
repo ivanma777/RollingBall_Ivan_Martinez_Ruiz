@@ -86,7 +86,6 @@ public class SceneSystem : MonoBehaviour
     public void Final()
     {
         StartCoroutine(ChangeFinal());
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //RegalosRecogidos.SetText("Regalos totales recogidos: " + Regalos);
 
 
@@ -94,7 +93,8 @@ public class SceneSystem : MonoBehaviour
     IEnumerator ChangeFinal()
     {
         transitionAnim.SetTrigger("exit");
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
 

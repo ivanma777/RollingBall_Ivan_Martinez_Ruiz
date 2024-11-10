@@ -37,9 +37,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject AudioVen;
     [SerializeField] private GameObject AudioCar;
-    
-    
 
+
+   
+    
     
 
 
@@ -103,6 +104,9 @@ public class GameManager : MonoBehaviour
         AudioCar.SetActive(true);
 
         FakePlayer.SetActive(true);
+
+       
+        
 
              //Player.transform.position = car.transform.position + car.transform.TransformDirection(Vector3.up);
     }
