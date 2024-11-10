@@ -14,7 +14,7 @@ public class Aceleration : MonoBehaviour
     {
         if (other.CompareTag("Trineo"))
         {
-            ControlVehiculo.Aceleracion *= 20f;
+            //ControlVehiculo.Aceleracion *= 20f;
             
 
         }
