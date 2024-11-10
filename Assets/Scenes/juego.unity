@@ -833,6 +833,7 @@ GameObject:
   - component: {fileID: 102234139}
   - component: {fileID: 102234138}
   - component: {fileID: 102234137}
+  - component: {fileID: 102234140}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Trineo
@@ -879,7 +880,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!135 &102234138
@@ -911,6 +912,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102234135}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &102234140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102234135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54e03bb85ca89c43bedd236737964a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoText: {fileID: 477571109}
+  intentosText: {fileID: 147639254}
+  regalosText: {fileID: 149078755}
+  almacenDatos: {fileID: 759491897}
+  sceneSystem: {fileID: 1756826822}
 --- !u!1001 &119110928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8122,6 +8140,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1861016793}
+    - target: {fileID: 4585480988307545477, guid: ac1450cf16c0d874fabb1ffb588cef7c,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 696
+      objectReference: {fileID: 0}
     - target: {fileID: 6371292304712278385, guid: ac1450cf16c0d874fabb1ffb588cef7c,
         type: 3}
       propertyPath: m_Name
@@ -9681,7 +9704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84ccfa1ce19fbf48af030b9588b6395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trineo: {fileID: 1006632437}
+  trineo: {fileID: 0}
   Ncoleccionable: 0
   regalos: 0
   intentos: 0
@@ -10043,6 +10066,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1062656502}
+    - target: {fileID: 4585480988307545477, guid: ac1450cf16c0d874fabb1ffb588cef7c,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 696
+      objectReference: {fileID: 0}
     - target: {fileID: 6371292304712278385, guid: ac1450cf16c0d874fabb1ffb588cef7c,
         type: 3}
       propertyPath: m_Name
@@ -10188,7 +10216,7 @@ Transform:
   m_GameObject: {fileID: 836816827}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11249,6 +11277,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 881490797}
+    - target: {fileID: 4585480988307545477, guid: ac1450cf16c0d874fabb1ffb588cef7c,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 696
+      objectReference: {fileID: 0}
     - target: {fileID: 6371292304712278385, guid: ac1450cf16c0d874fabb1ffb588cef7c,
         type: 3}
       propertyPath: m_Name
@@ -11809,7 +11842,6 @@ GameObject:
   - component: {fileID: 1004364606}
   - component: {fileID: 1000330078}
   - component: {fileID: 1006632439}
-  - component: {fileID: 1006632437}
   m_Layer: 0
   m_Name: Trineo
   m_TagString: Trineo
@@ -11817,23 +11849,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1006632437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006632436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54e03bb85ca89c43bedd236737964a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiempoText: {fileID: 477571109}
-  intentosText: {fileID: 147639254}
-  regalosText: {fileID: 149078755}
-  almacenDatos: {fileID: 759491897}
-  sceneSystem: {fileID: 1756826822}
 --- !u!1 &1006632438
 GameObject:
   m_ObjectHideFlags: 0
@@ -11866,7 +11881,13 @@ MonoBehaviour:
   forwardAccel: 8
   reverseAccel: 4
   macSpeed: 50
-  turnStrength: 180
+  turnStrength: 135
+  gravityForce: 10
+  Ground:
+    serializedVersion: 2
+    m_Bits: 64
+  groundRayLenght: 0.5
+  groundRayPoint: {fileID: 836816828}
 --- !u!1 &1006632440
 GameObject:
   m_ObjectHideFlags: 0
@@ -18692,6 +18713,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1589903417}
+    - target: {fileID: 4585480988307545477, guid: ac1450cf16c0d874fabb1ffb588cef7c,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 696
+      objectReference: {fileID: 0}
     - target: {fileID: 6371292304712278385, guid: ac1450cf16c0d874fabb1ffb588cef7c,
         type: 3}
       propertyPath: m_Name
@@ -19423,6 +19449,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1033542721}
+    - target: {fileID: 4585480988307545477, guid: ac1450cf16c0d874fabb1ffb588cef7c,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 696
+      objectReference: {fileID: 0}
     - target: {fileID: 6371292304712278385, guid: ac1450cf16c0d874fabb1ffb588cef7c,
         type: 3}
       propertyPath: m_Name
@@ -20293,27 +20324,12 @@ PrefabInstance:
     - target: {fileID: 5406259591172968433, guid: 2e37e0d606c74ff4298b80a00a42dea0,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 100
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: 6830888172825782572, guid: 2e37e0d606c74ff4298b80a00a42dea0,
         type: 3}
       propertyPath: m_Name
       value: CurvaCerrada (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7172878231353246352, guid: 2e37e0d606c74ff4298b80a00a42dea0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 22.49519
-      objectReference: {fileID: 0}
-    - target: {fileID: 7172878231353246352, guid: 2e37e0d606c74ff4298b80a00a42dea0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 24.348345
-      objectReference: {fileID: 0}
-    - target: {fileID: 7172878231353246352, guid: 2e37e0d606c74ff4298b80a00a42dea0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.7066249
       objectReference: {fileID: 0}
     - target: {fileID: 7172878231353246352, guid: 2e37e0d606c74ff4298b80a00a42dea0,
         type: 3}
@@ -20923,7 +20939,7 @@ PrefabInstance:
     - target: {fileID: 4585480988307545477, guid: ac1450cf16c0d874fabb1ffb588cef7c,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 696
+      value: 702
       objectReference: {fileID: 0}
     - target: {fileID: 6371292304712278385, guid: ac1450cf16c0d874fabb1ffb588cef7c,
         type: 3}
@@ -21075,6 +21091,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: base
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730392797931507825, guid: d0233d04a117f304e8e387939d51435e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7224556307913427660, guid: d0233d04a117f304e8e387939d51435e,
         type: 3}
@@ -21433,7 +21454,7 @@ PrefabInstance:
     - target: {fileID: 5406259591172968433, guid: 2e37e0d606c74ff4298b80a00a42dea0,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 100
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: 6830888172825782572, guid: 2e37e0d606c74ff4298b80a00a42dea0,
         type: 3}

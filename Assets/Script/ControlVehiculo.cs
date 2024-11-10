@@ -7,19 +7,85 @@ public class ControlVehiculo : MonoBehaviour
 
     [SerializeField] Rigidbody rb;
 
-    public float forwardAccel = 8f, reverseAccel = 4f, macSpeed = 50f, turnStrength = 180f;
+    public float forwardAccel = 8f, reverseAccel = 4f, macSpeed = 50f, turnStrength = 180f, gravityForce= 2f;
 
+    private float speedInput, turnInput;
 
+    private bool grounded;
 
+    public LayerMask Ground;
+
+    public float groundRayLenght = 1f;
+
+    [SerializeField] Transform groundRayPoint;
+
+    private void Start()
+    {
+        rb.transform.parent = null;
+    }
 
     private void Update()
     {
         transform.position = rb.position;
+
+        speedInput = 0;
+        if(Input.GetAxis("Vertical") > 0)
+        {
+            speedInput = Input.GetAxis("Vertical") * forwardAccel * 100f; 
+
+
+        }
+        else if (Input.GetAxis("Vertical") < 0)
+        {
+            speedInput = (Input.GetAxis("Vertical")) * reverseAccel * 100f; 
+
+        }
+
+
+        turnInput = Input.GetAxis("Horizontal");
+
+
+        if (grounded )
+        {
+
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrength * Time.deltaTime , 0f) ) ;
+
+
+        }
+
+
+
+
     }
 
     private void FixedUpdate()
     {
-        rb.AddForce(transform.forward * forwardAccel);
+        grounded = false;
+        RaycastHit hit;
+
+        if( Physics.Raycast(groundRayPoint.position, -transform.up, out hit, groundRayLenght, Ground ))
+        {
+            grounded = true;    
+
+        }
+
+        if( grounded )
+        {
+             if(Mathf.Abs(speedInput) > 0)
+             {
+                rb.AddForce(transform.forward *  speedInput);
+            
+             }
+
+
+
+        }
+        else
+        {
+            rb.AddForce(Vector3.up * -gravityForce );
+
+
+        }
     }
 
 

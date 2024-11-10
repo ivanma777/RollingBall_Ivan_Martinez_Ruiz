@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7326772158669440914}
   - component: {fileID: 7453375832445741199}
   - component: {fileID: 8983674599234059811}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CurvaCerrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -78.97037, y: -16.335415, z: 711.16656}
-  m_LocalScale: {x: 22.495188, y: 24.348343, z: 1.7066247}
+  m_LocalScale: {x: 22.49519, y: 24.348345, z: 1.7066249}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1087,7 +1087,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 97
+  m_VersionIndex: 103
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
