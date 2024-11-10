@@ -63,7 +63,7 @@ public class SceneSystem : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.U))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
 
             Pause();

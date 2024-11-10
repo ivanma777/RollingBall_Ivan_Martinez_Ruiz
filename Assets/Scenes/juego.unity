@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 28769219}
   - component: {fileID: 28769218}
   m_Layer: 5
-  m_Name: Image
+  m_Name: e
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8130,7 +8130,7 @@ GameObject:
   - component: {fileID: 365861317}
   - component: {fileID: 365861316}
   m_Layer: 5
-  m_Name: Button
+  m_Name: resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15403,7 +15403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &698870796
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15737,7 +15737,7 @@ GameObject:
   - component: {fileID: 772188269}
   - component: {fileID: 772188268}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23608,7 +23608,7 @@ Transform:
   m_GameObject: {fileID: 1672766123}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -14, z: 142.2094}
+  m_LocalPosition: {x: 0, y: -37, z: 142.2094}
   m_LocalScale: {x: 1000, y: 1.5798, z: 1284.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25394,7 +25394,7 @@ GameObject:
   - component: {fileID: 1816032333}
   - component: {fileID: 1816032332}
   m_Layer: 5
-  m_Name: Image
+  m_Name: datos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31354,7 +31354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option
+  m_text: Options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7c045051e9232bb46bdad9cbbf71ccd1, type: 2}
   m_sharedMaterial: {fileID: -3865415896030624381, guid: 7c045051e9232bb46bdad9cbbf71ccd1,
@@ -31823,7 +31823,7 @@ GameObject:
   - component: {fileID: 2090349690}
   - component: {fileID: 2090349689}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: option
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33325,7 +33325,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
