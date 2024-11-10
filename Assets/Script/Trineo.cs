@@ -29,6 +29,13 @@ public class Trineo : MonoBehaviour
 
     private Vector3 posInicial;
 
+    [Header("Music")]
+    [SerializeField] AudioClip colec;
+    [SerializeField] AudioClip victoria;
+    [SerializeField] AudioClip muerte;
+
+    [SerializeField] AudioManager audioManager;
+
     
     
 
@@ -53,10 +60,10 @@ public class Trineo : MonoBehaviour
     {
         if (haSalido == true)
         {
-            tiempo +=  Time.deltaTime;
+            almacenDatos.tiempo +=  Time.deltaTime;
 
 
-            tiempoText.SetText( tiempo.ToString("F2"));
+            tiempoText.SetText( almacenDatos.tiempo.ToString("F2"));
 
         }
     }
@@ -64,6 +71,7 @@ public class Trineo : MonoBehaviour
     {
         if (other.CompareTag("Final"))
         {
+            audioManager.ReproducirColeccionable(victoria);
             sceneSystem.Final();
         
         }
@@ -72,11 +80,14 @@ public class Trineo : MonoBehaviour
         {
             almacenDatos.regalos++;
             regalosText.SetText(": " + almacenDatos.regalos);
-            
+            audioManager.ReproducirColeccionable(colec);
+
+
 
         }
         if (other.CompareTag("Muerte"))
         {
+            audioManager.ReproducirColeccionable(muerte);
             transform.position = (posInicial);
             almacenDatos.intentos++;
             tiempo = 0;

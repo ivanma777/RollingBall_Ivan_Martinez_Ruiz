@@ -6,13 +6,15 @@ public class AlmacenDatos : MonoBehaviour
 {
     public static AlmacenDatos instance;
 
-    [SerializeField] Trineo trineo;
+    
 
     public int Ncoleccionable;
 
     public int regalos;
 
     public int intentos;
+
+    public float tiempo;
     // Start is called before the first frame update
     void Start()
     {

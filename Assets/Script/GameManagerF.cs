@@ -10,6 +10,7 @@ public class GameManagerF : MonoBehaviour
 
     [SerializeField] TMP_Text RegalosRecogidos;
     [SerializeField] TMP_Text intentosRealizados;
+    [SerializeField] TMP_Text timer;
 
      
 
@@ -18,8 +19,8 @@ public class GameManagerF : MonoBehaviour
     private int regalos ;
 
     private int intentos;
-    
-    
+
+    private float tiempo;
     public int Ncoleccionable1 { get => Ncoleccionable; set => Ncoleccionable = value; }
     
 
@@ -27,9 +28,12 @@ public class GameManagerF : MonoBehaviour
     void Start()
     {
         
+
         RegalosRecogidos.SetText("Regalos totales recogidos: " + regalos  + " / " + Ncoleccionable1);
 
         intentosRealizados.SetText("N intentos: " + intentos );
+
+        timer.SetText("Tiempo: " + tiempo.ToString("F2"));
         
     }
 
@@ -57,6 +61,8 @@ public class GameManagerF : MonoBehaviour
         AlmacenDatos.instance.Ncoleccionable = Ncoleccionable;
         AlmacenDatos.instance.regalos = regalos;
         AlmacenDatos.instance.intentos = intentos;
+        AlmacenDatos.instance.tiempo = tiempo;
+
 
 
     }
@@ -66,6 +72,7 @@ public class GameManagerF : MonoBehaviour
         regalos = AlmacenDatos.instance.regalos;
         Ncoleccionable = AlmacenDatos.instance.Ncoleccionable;
         intentos = AlmacenDatos.instance.intentos;
+        tiempo = AlmacenDatos.instance.tiempo;
     }
 
 }

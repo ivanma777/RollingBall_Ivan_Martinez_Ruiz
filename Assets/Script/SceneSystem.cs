@@ -15,6 +15,8 @@ public class SceneSystem : MonoBehaviour
 
     [SerializeField] GameObject MenuPause;
 
+    [SerializeField] Animator transitionAnim;
+
     
 
     // Start is called before the first frame update
@@ -83,10 +85,17 @@ public class SceneSystem : MonoBehaviour
 
     public void Final()
     {
-
+        StartCoroutine(ChangeFinal());
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //RegalosRecogidos.SetText("Regalos totales recogidos: " + Regalos);
-    }
 
+
+    }
+    IEnumerator ChangeFinal()
+    {
+        transitionAnim.SetTrigger("exit");
+        yield return new WaitForSeconds(10f);
+
+    }
 
 }

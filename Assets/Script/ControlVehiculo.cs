@@ -19,6 +19,10 @@ public class ControlVehiculo : MonoBehaviour
 
     [SerializeField] Transform groundRayPoint;
 
+    [SerializeField] ParticleSystem[] dustt;
+
+    [SerializeField] float maxEmission = 25f, emissionRate;
+
     private void Start()
     {
         rb.transform.parent = null;
@@ -69,6 +73,8 @@ public class ControlVehiculo : MonoBehaviour
 
             transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
         }
+        emissionRate = 0;
+
 
         if( grounded )
         {
@@ -77,7 +83,10 @@ public class ControlVehiculo : MonoBehaviour
              if(Mathf.Abs(speedInput) > 0)
              {
                 rb.AddForce(transform.forward *  speedInput);
-            
+
+                emissionRate = maxEmission;
+
+
              }
 
 
@@ -90,6 +99,13 @@ public class ControlVehiculo : MonoBehaviour
 
 
         }
+
+        foreach(ParticleSystem part in dustt)
+        {
+            var emissionModule = part.emission;
+            emissionModule.rateOverTime = emissionRate;
+        }
+
     }
 
 
